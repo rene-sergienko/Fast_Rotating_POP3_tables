@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Integrated Stellar Yields: 5–50 M_sun</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- DataTables CSS/JS loaded from CDN. Works automatically on GitHub Pages. -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.2/css/buttons.dataTables.min.css">
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      margin: 2rem;
+      line-height: 1.4;
+      color: #222;
+    }
+    h1 {
+      margin-bottom: 0.2rem;
+    }
+    .note {
+      max-width: 900px;
+      margin-bottom: 1.5rem;
+    }
+    table.dataTable {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+    td, th {
+      white-space: nowrap;
+      text-align: right;
+    }
+    td:first-child, th:first-child {
+      text-align: left;
+      font-weight: 600;
+    }
+    .footer {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Integrated Stellar Yields for Selected Isotopes</h1>
+  <p class="note">
+    Integrated stellar yields as a function of initial stellar mass over the range
+    5–50 M<sub>⊙</sub>. Values are in M<sub>⊙</sub>. Yields below
+    10<sup>−10</sup> M<sub>⊙</sub> are treated as zero.
+  </p>
+
+  <table id="yieldTable" class="display compact">
+    <thead>
+      <tr><th>Isotope</th><th>5</th><th>7</th><th>9</th><th>12</th><th>15</th><th>20</th><th>25</th><th>30</th><th>40</th><th>50</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1$H</td><td>1.33</td><td>2.33</td><td>3.33</td><td>4.69</td><td>4.90</td><td>6.25</td><td>8.11</td><td>8.91</td><td>8.82</td><td>12.1</td></tr>
+<tr><td>3$He</td><td>3.0x10-5</td><td>6.4x10-4</td><td>2.9x10-4</td><td>1.9x10-3</td><td>5.1x10-3</td><td>1.1x10-3</td><td>1.7x10-3</td><td>5.8x10-5</td><td>3.3x10-5</td><td>4.8x10-3</td></tr>
+<tr><td>4$He</td><td>2.01</td><td>2.92</td><td>2.32</td><td>4.83</td><td>6.15</td><td>9.14</td><td>10.3</td><td>11.6</td><td>15.2</td><td>16.6</td></tr>
+<tr><td>12$C</td><td>7.9x10-2</td><td>1.3x10-1</td><td>2.5x10-1</td><td>2.6x10-1</td><td>1.9x10-1</td><td>6.0x10-1</td><td>5.6x10-1</td><td>6.0x10-1</td><td>4.5x10-1</td><td>6.0x10-1</td></tr>
+<tr><td>13$C</td><td>1.1x10-3</td><td>1.7x10-3</td><td>1.5x10-3</td><td>4.2x10-3</td><td>1.2x10-2</td><td>2.0x10-2</td><td>7.0x10-3</td><td>2.9x10-2</td><td>1.6x10-4</td><td>5.4x10-3</td></tr>
+<tr><td>14$C</td><td>3.6x10-6</td><td>7.8x10-5</td><td>4.4x10-4</td><td>4.0x10-3</td><td>5.0x10-4</td><td>2.5x10-3</td><td>3.1x10-3</td><td>1.2x10-2</td><td>3.9x10-3</td><td>7.1x10-4</td></tr>
+<tr><td>14$N</td><td>1.6x10-2</td><td>1.8x10-2</td><td>1.1x10-2</td><td>3.6x10-3</td><td>9.0x10-3</td><td>1.1x10-2</td><td>8.1x10-3</td><td>2.1x10-2</td><td>4.2x10-3</td><td>7.0x10-2</td></tr>
+<tr><td>15$N</td><td>4.1x10-5</td><td>6.2x10-4</td><td>7.0x10-4</td><td>1.8x10-4</td><td>2.1x10-3</td><td>1.1x10-4</td><td>3.9x10-4</td><td>1.5x10-5</td><td>1.2x10-6</td><td>1.3x10-3</td></tr>
+<tr><td>16$O</td><td>1.1x10-1</td><td>2.4x10-1</td><td>1.50</td><td>7.1x10-1</td><td>2.15</td><td>1.52</td><td>1.10</td><td>1.39</td><td>4.4x10-1</td><td>8.0x10-1</td></tr>
+<tr><td>17$O</td><td>1.9x10-5</td><td>1.7x10-5</td><td>2.9x10-5</td><td>1.1x10-5</td><td>7.6x10-4</td><td>5.5x10-5</td><td>3.3x10-5</td><td>5.8x10-4</td><td>5.8x10-7</td><td>2.5x10-5</td></tr>
+<tr><td>18$O</td><td>3.0x10-5</td><td>2.6x10-5</td><td>4.6x10-3</td><td>8.3x10-6</td><td>4.2x10-6</td><td>3.9x10-7</td><td>4.7x10-7</td><td>9.7x10-8</td><td>4.2x10-8</td><td>5.0x10-8</td></tr>
+<tr><td>18$F</td><td>0</td><td>0</td><td>0</td><td>1.1x10-8</td><td>7.8x10-6</td><td>3.0x10-9</td><td>3.2x10-8</td><td>8.3x10-8</td><td>0</td><td>4.9x10-9</td></tr>
+<tr><td>19$F</td><td>1.3x10-6</td><td>1.3x10-6</td><td>5.2x10-5</td><td>1.2x10-7</td><td>3.4x10-6</td><td>1.8x10-6</td><td>1.1x10-6</td><td>1.2x10-6</td><td>5.3x10-6</td><td>1.9x10-8</td></tr>
+<tr><td>20$Ne</td><td>5.9x10-5</td><td>1.1x10-3</td><td>3.0x10-2</td><td>1.6x10-1</td><td>1.4x10-1</td><td>2.2x10-1</td><td>2.0x10-2</td><td>1.4x10-2</td><td>1.6x10-3</td><td>1.5x10-1</td></tr>
+<tr><td>21$Ne</td><td>7.4x10-7</td><td>4.7x10-6</td><td>3.0x10-4</td><td>8.3x10-7</td><td>2.5x10-4</td><td>3.0x10-5</td><td>1.4x10-5</td><td>1.9x10-5</td><td>2.7x10-5</td><td>8.5x10-6</td></tr>
+<tr><td>22$Ne</td><td>1.9x10-4</td><td>1.9x10-4</td><td>2.1x10-2</td><td>2.3x10-5</td><td>2.2x10-4</td><td>3.4x10-3</td><td>6.5x10-4</td><td>1.0x10-3</td><td>5.4x10-3</td><td>3.5x10-5</td></tr>
+<tr><td>23$Na</td><td>1.3x10-6</td><td>1.5x10-6</td><td>1.8x10-4</td><td>5.1x10-7</td><td>3.7x10-6</td><td>3.5x10-5</td><td>1.1x10-5</td><td>2.2x10-5</td><td>4.2x10-5</td><td>2.9x10-7</td></tr>
+<tr><td>24$Mg</td><td>1.5x10-6</td><td>5.7x10-5</td><td>3.0x10-3</td><td>9.0x10-3</td><td>1.5x10-2</td><td>1.5x10-2</td><td>8.5x10-4</td><td>5.6x10-4</td><td>2.1x10-5</td><td>3.2x10-2</td></tr>
+<tr><td>25$Mg</td><td>1.8x10-6</td><td>1.4x10-5</td><td>2.2x10-3</td><td>6.9x10-7</td><td>1.2x10-3</td><td>6.3x10-5</td><td>1.3x10-5</td><td>1.9x10-5</td><td>8.7x10-5</td><td>5.0x10-5</td></tr>
+<tr><td>26$Mg</td><td>4.8x10-6</td><td>2.2x10-5</td><td>5.4x10-3</td><td>1.2x10-6</td><td>4.6x10-4</td><td>1.4x10-4</td><td>1.6x10-5</td><td>3.2x10-4</td><td>1.3x10-4</td><td>2.0x10-5</td></tr>
+<tr><td>26$Al</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7.9x10-10</td><td>0</td><td>6.2x10-10</td><td>1.4x10-8</td><td>3.5x10-9</td></tr>
+<tr><td>27$Al</td><td>3.0x10-8</td><td>9.5x10-8</td><td>3.9x10-5</td><td>7.2x10-9</td><td>1.7x10-6</td><td>8.8x10-7</td><td>6.8x10-8</td><td>5.7x10-6</td><td>5.1x10-7</td><td>1.0x10-8</td></tr>
+<tr><td>28$Si</td><td>0</td><td>0</td><td>0</td><td>1.8x10-4</td><td>7.9x10-4</td><td>3.7x10-4</td><td>1.1x10-5</td><td>0</td><td>0</td><td>1.2x10-6</td></tr>
+<tr><td>29$Si</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>30$Si</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>31$P</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>32$S</td><td>0</td><td>0</td><td>0</td><td>1.8x10-7</td><td>2.4x10-5</td><td>7.0x10-7</td><td>1.6x10-8</td><td>0</td><td>0</td><td>2.9x10-9</td></tr>
+<tr><td>33$S</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>34$S</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>36$S</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>35$Cl</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>37$Cl</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>36$Ar</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7.1x10-8</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>38$Ar</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>39$K</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>40$K</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>41$K</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>40$Ca</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>42$Ca</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>43$Ca</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>44$Ca</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>45$Sc</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>46$Ti</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>47$Ti</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>48$Ti</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>49$Ti</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>51$V</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>50$Cr</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>52$Cr</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>53$Cr</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>54$Cr</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>55$Mn</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>54$Fe</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>56$Fe</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>57$Fe</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>58$Fe</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>59$Co</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>58$Ni</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>60$Ni</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>61$Ni</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>62$Ni</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>63$Cu</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>64$Zn</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>66$Zn</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    </tbody>
+  </table>
+
+  <p class="footer">
+    Machine-readable CSV: <a href="yields_lowmass.csv">yields_lowmass.csv</a>
+  </p>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/3.0.2/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.html5.min.js"></script>
+
+  <script>
+    new DataTable('#yieldTable', {
+      paging: true,
+      pageLength: 25,
+      scrollX: true,
+      searching: true,
+      ordering: true,
+      layout: {
+        topStart: {
+          buttons: ['copy', 'csv']
+        }
+      }
+    });
+  </script>
+</body>
+</html>
